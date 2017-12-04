@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Section</title>
+        <!-- <link rel="stylesheet" type="text/css" href="framework7.material.min.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="framework7.material.colors.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/my-app.css">
+    </head>
+    <body>
+        <h2 style="text-align:center">"My" Gallery</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="img/1.jpg" height="200" width="200"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/2.jpg" height="200" width="200"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/3.jpg" height="200" width="200" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/4.jpg" height="200" width="200" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/5.jpg" height="200" width="200" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/6.jpg" height="200" width="200" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/7.jpg" height="200" width="200" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/8.jpg" height="200" width="200" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <center><img src="img/1.jpg" height="30%" width="30%" ></center>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <center><img src="img/2.jpg" height="30%" width="30%"></center>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <center><img src="img/3.jpg" height="30%" width="30%"></center>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <center><img src="img/4.jpg" height="30%" width="30%"></center>
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+     <center> <img src="img/5.jpg" height="30%" width="30%"></center>
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <center><img src="img/6.jpg" height="30%" width="30%"></center>
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <center><img src="img/7.jpg" height="30%" width="30%"></center>
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <center><img src="img/8.jpg" height="30%" width="30%"></center>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/1.jpg" height="200" width="200"  onclick="currentSlide(1)" alt="Ang <b>Naga</b> o mas kilala sa tawag na<b> Narra (Pterocarpus indicus)</b>, na Pambansang Puno ng <br>Pilipinas, ay isang puno na pinahahalagahan dahil sa angkin nitong tibay, bigat at magandang kalidad. <br>Inihahalintulad ito sa mga Pilipino, na tulad ng Narra, ang mga Pilipino ay sadya ring matatag. Ang punong ito <br>ay matatagpuan sa bawat lugar sa bansa. Ipinangalan ito alinsunod sa isang siyudad sa Naga, Bikol. Tinatawag <br>din itong Asana ng mga Tagalog, Balauning ng mga Mangyan, Daitanag ng mga Kapampangan at Odiau ng mga <br>Pangasinense.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/2.jpg" height="200" width="200" onclick="currentSlide(2)" alt="Ang anahaw ( Livistona rotundifolia ) ay isang pabilog na dahon na palma na <br>matatagpuan sa Timog-Silangang Asya. Kasapi ito sa genus Livistona na tinatawag na Footstool palm sa Ingles. <br>Pambansang dahon ito ng Pilipinas.<br>
+
+Karaniwang tanawin ang halaman na ito sa rehiyon. Tumutubo ito sa mga sub-tropikal na mga klima at mamasa-masang tropikal na <br>lugar.<br>
+Ginagamit ang mga dahon sa kugon at pambalot ng pagkain. Nabawasan ang laki ng mga ligaw na mga halaman dahil sa sobrang pag-<br>ani. Bagaman mabilis na tumubo ang mga dahon pagkatapos anihin ngunit nagiging maliit ito.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/3.jpg" height="200" width="200" onclick="currentSlide(3)" alt="Ang mangga ay kabilang sa genus Mangifera, na binubuo ng ilang mga uri na <br>namumungang puno sa namumulaklak na halaman ng pamilya ng Anacardiaceae. Likas ang mangga sa subkontinente ng <br>Indyan lalo na sa Indya, Pakistan, Bangladesh, at Timog-silangang Asya. Napakaraming klase at karaniwang kulay <br>ang prutas nito: may dilaw, luntian o pula. Kakaiba ang amoy na aromatikong ng prutas nito na maaaring <br>gamitin sa iba’t-ibang sangkap o pabango. Prinipriserba rin ang mangga at ginagawang panghimagas o pansangkap sa <br>iba’t ibang pagkain.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/4.jpg" height="200" width="200" onclick="currentSlide(4)" alt="Ang haribon ay isang malaking agila na makikita sa mga gubat ng Luzon, Samar, Leyte at<br> Rehiyon XII o SOCCSKSARGEN. Ito ay ang pambansang ibon ng Pilipinas. Ang haribon ay simbolo ng katapangan ng <br>mga ninuno ng Pilipino. Sila ay may haba o taas na 1 metro at tumitimbang ng mula 4 hanggang 7 kilo. Tulad ng <br>ibang agila higit na mas malaki ang babaeng haribon kaysa lalaki. Ang haba ng kanilang pakpak ay 2 metro o <br>higit pa. Sila ay kumakain ng mga unggoy, malalaking ahas, kaguang, malalaking ibon gaya ng kalaw at mga bayawak">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/5.jpg" height="200" width="200" onclick="currentSlide(5)" alt="Ang kalabaw (Bubalus bubalis carabanesis o minsan Bubalus carabanesis) ay isang <br>domestikadong uri ng kalabaw na pantubig o water buffalo (Bubalus bubalis) na karaniwang matatagpuan sa <br>Pilipinas, Guam, pati sa ibang bahagi Timog-silangang Asya. Madalas iniuugnay ang kalabaw sa mga magbubukid dahil <br>ito ang kadalasang napiling hayop para sa pag-araro at magtulak ng kariton na ginagamit ng mga magbubukid <br>upang madala ang kanilang ani sa palengke.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/6.jpg" height="200" width="200" onclick="currentSlide(6)" alt="Ang sampaguita, kampupot o hasmin (Ingles: jasmin o jasmine) ay isang uri ng <br>palumpong na may maliliit, mababango at mapuputing mga bulaklak. Mas maliit ang bulaklak nito kaysa ibang mga <br>sampaga">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/7.jpg" height="200" width="200" onclick="currentSlide(7)" alt="Ang litson o letson (sa Kastila: lechón – biik) ay isang inihaw na buong baboy, bata <br>man o hindi, na karaniwang nilalagyan ng mansanas sa bibig matapos na malutong nakatuhog sa kawayan habang <br>nakadarang sa nagbabagang mga uling.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/8.jpg" height="200" width="200" onclick="currentSlide(8)" alt="Ang bahay kubo o kubo lamang ay isang katutubong bahay na ginagamit sa Pilipinas. Ang<br> katutubong bahay ay gawa sa kawayan na itinatali na magkasama, na may isang binigkis na bubong gamit ang <br>dahon ng  anahaw. Ang bahay kubo ay ang pambansang bahay ng Pilipinas. Ang bahay kubo ay gawa sa kawayan na <br>pinagtali at mga nipa. Angkop ito laban sa hangin at ulan. Ngunit ito ay madaling masira sa mga bagyo at madaling <br>palitan.">
+    </div>
+  </div>
+</div>
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </body>
+   <!--<script crossorigin type="text/javascript" src="js/react.min.js"></script> -->
+     <!--<script crossorigin type="text/javascript" src="js/react-dom.min.js"></script> -->
+   <!--<script crossorigin type="text/javascript" src="js/babel.min.js"></script> -->
+     <!--<script crossorigin type="text/javascript" src="js/framework7.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/worker.sql.js"></script> -->
+     <!--<script type="text/javascript" src="js/sql.js"></script>-->
+   <script type="text/jsx" src="js/process.js"></script> 
+     <!--<script type="text/javascript" src="js/sqlite.js"></script>-->
+</html>
